@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+     let str="can-enter-volunteer-organization";
+
+function stringToCamel(str){
+
+      let temp = str.split("-");
+
+      for(let i = 1; i < temp.length;i++){
+
+           temp[i]=temp[i][0].toUpperCase()+temp[i].slice(1);
+       }
+        return temp.join("");
+    }
+     alert(stringToCamel(str))
+
+     let arr = ["myfirstactivity","today activity","yourActivity","activitys"];
+
+     let arrvalue;//用于存放取出的数组的值
+
+      for (let i = 0;i < arr.length;i++){
+
+     arrvalue = arr[i];//数组的索引是从0开始的
+
+      console.log(arrvalue);//把取出的值打印在控制台上
+    }
+      console.log("activity");
+    </script>
+</head>
+<body>
+
+</body>
+</html>
